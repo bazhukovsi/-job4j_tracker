@@ -18,5 +18,4 @@ public class Student {
         petya.music(1);
         petya.music(1);
     }
-
 }
