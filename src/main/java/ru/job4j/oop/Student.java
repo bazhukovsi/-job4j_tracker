@@ -1,7 +1,7 @@
 package ru.job4j.oop;
 
 public class Student {
-    public void music() {
+    public void music(int i) {
         System.out.println("Tra tra tra");
     }
 
@@ -14,8 +14,8 @@ public class Student {
         petya.song();
         petya.song();
         petya.song();
-        petya.music();
-        petya.music();
-        petya.music();
+        petya.music(1);
+        petya.music(1);
+        petya.music(1);
     }
 }
