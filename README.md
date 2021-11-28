@@ -1,15 +1,16 @@
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
-# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker# job4j_tracker
+# Тема: Классы и объекты 
+# 0. Классы и объекты [#6828 #233733] - 1
+# 1.1. Создание объекта [#165452 #233736] -1
+# 1.2. Вызов метода объекта [#166085 #233748] - 1
+# 1.3. Вызов метода с аргументами. [#166086 #233795] -1 
+# 1.4. Вызов метода с возвращаемым типом. [#167387] - 1
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
