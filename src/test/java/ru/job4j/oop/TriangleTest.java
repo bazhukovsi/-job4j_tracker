@@ -40,11 +40,11 @@ public class TriangleTest {
 
     @Test
     public void area1000001() {
-        Point a = new Point(10, 0);
-        Point b = new Point(0, 0);
-        Point c = new Point(0, 1);
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 1);
+        Point c = new Point(0, 2);
         Triangle triangle = new Triangle(a, b, c);
         double rsl = triangle.area();
-        Assert.assertEquals(-1, -1);
+        Assert.assertEquals(-1, rsl, 0.001);
     }
 }
