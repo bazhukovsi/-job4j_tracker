@@ -15,14 +15,11 @@ public class Shop {
     }
 
     public static int indexOfNull(Product[] products) {
-        if (products.length == 1 && products[0] != null) {
-            return -1;
-        }
         for (int i = 0; i < products.length; i++) {
             if (products[i] == null) {
                 return i;
             }
         }
-        return 0;
+        return -1;
     }
 }
