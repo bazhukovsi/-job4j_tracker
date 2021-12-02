@@ -33,11 +33,10 @@ public class Tracker {
         int count = 0;
         Item[] output = new Item[items.length];
         for (int i = 0; i < size; i++) {
-                if (items[i].getName().equals(key)) {
-                    output[count++] = items[i];
-                }
+            if (items[i].getName().equals(key)) {
+                output[count++] = items[i];
+            }
         }
-        output = Arrays.copyOf(output, count);
-        return output;
+        return Arrays.copyOf(output, count);
     }
 }
