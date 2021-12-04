@@ -20,10 +20,10 @@ public class PhoneDictionaryTest {
         assertThat(persons.get(0).getSurname(), is("Arsentev"));
     }
 
-    @Test(expected = IndexOutOfBoundsException.class)
+    @Test
     public void whenParametrSmallerZero() {
         PhoneDictionary phones = new PhoneDictionary();
         ArrayList<Person> persons = phones.find("Petr");
-        assertThat(persons.get(0).getSurname(), is("Arsentev"));
+        assertTrue(persons.isEmpty());
     }
 }
