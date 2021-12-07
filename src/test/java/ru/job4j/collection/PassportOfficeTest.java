@@ -25,4 +25,5 @@ public class PassportOfficeTest {
         boolean result = office.add(citizenDuplicate);
         Assert.assertFalse(result);
     }
+
 }
