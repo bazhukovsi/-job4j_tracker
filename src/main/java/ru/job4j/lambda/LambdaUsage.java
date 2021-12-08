@@ -14,7 +14,7 @@ public class LambdaUsage {
         System.out.println("-----------------------");
         Comparator<String> comparatorDescLength = (o1, o2) -> {
             System.out.println("compare " + o2.length() + " : " + o1.length());
-            return o2.length() - o1.length();
+            return Integer.compare(o2.length(), o1.length());
         };
         arrayList.sort(comparatorDescLength);
         System.out.println("-----------------------");
