@@ -6,10 +6,10 @@ import java.util.function.Function;
 
 public class DiapazonFunction {
     public static List<Double> diapason(int start, int end, Function<Double, Double> func) {
-        List<Double> rezult = new ArrayList<>();
+        List<Double> result = new ArrayList<>();
         for (int i = start; i < end; i++) {
-            rezult.add(func.apply((double) i));
+            result.add(func.apply((double) i));
         }
-        return rezult;
+        return result;
     }
 }
