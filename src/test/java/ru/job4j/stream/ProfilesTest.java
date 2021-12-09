@@ -21,12 +21,28 @@ public class ProfilesTest {
     }
 
     @Test
-    public void whenCollectAddressTwo() {
+    public void whenTwoCollectAddress() {
         Profile profile = new Profile(new Address("Segezha", "proezd Montazhnikov", 5, 130),
                 "Sergey Bazhukov");
         Profile profile1 = new Profile(new Address("Segezha", "proezd Bumazhnikov", 6, 100),
                 "Elena Bazhukova");
         List<Profile> list = List.of(profile, profile1);
+        Profiles profiles = new Profiles();
+        List<Address> rsl = profiles.collect(list);
+        List<Address> expected = List.of(new Address("Segezha", "proezd Montazhnikov", 5, 130),
+                new Address("Segezha", "proezd Bumazhnikov", 6, 100));
+        assertThat(rsl, is(expected));
+    }
+
+    @Test
+    public void whenEqualCollectAddress() {
+        Profile profile = new Profile(new Address("Segezha", "proezd Montazhnikov", 5, 130),
+                "Sergey Bazhukov");
+        Profile profile1 = new Profile(new Address("Segezha", "proezd Bumazhnikov", 6, 100),
+                "Elena Bazhukova");
+        Profile profile2 = new Profile(new Address("Segezha", "proezd Bumazhnikov", 6, 100),
+                "Sasha Bazhukova");
+        List<Profile> list = List.of(profile, profile1, profile2);
         Profiles profiles = new Profiles();
         List<Address> rsl = profiles.collect(list);
         List<Address> expected = List.of(new Address("Segezha", "proezd Montazhnikov", 5, 130),
