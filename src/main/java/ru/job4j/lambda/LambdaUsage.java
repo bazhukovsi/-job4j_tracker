@@ -13,7 +13,7 @@ public class LambdaUsage {
         System.out.println("До сортировки : " + arrayList);
         System.out.println("-----------------------");
         Comparator<String> comparatorDescLength = (o1, o2) -> {
-            System.out.println("compare " + o2.length() + " : " + o1.length());
+            System.out.println("compare " + o1.length() + " : " + o2.length());
             return Integer.compare(o2.length(), o1.length());
         };
         arrayList.sort(comparatorDescLength);
