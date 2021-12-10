@@ -11,9 +11,7 @@ public class IntMatrixToListTest {
 
     @Test
     public void convertIntToList() {
-        List<List<Integer>> test = List.of(
-                List.of(1, 2),
-                List.of(3, 4));
+        Integer[][] test = new Integer[][]{{1, 2}, {3, 4}};
         List<Integer> expected = List.of(1, 2, 3, 4);
         List<Integer> rsl = IntMatrixToList.convert(test);
         assertThat(rsl, is(expected));
