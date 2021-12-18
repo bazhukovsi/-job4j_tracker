@@ -12,5 +12,4 @@ public class SingleTracker {
         }
         return tracker;
     }
-
 }
