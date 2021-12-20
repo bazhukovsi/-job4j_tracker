@@ -16,7 +16,7 @@ public class ItemCompareNameDesc {
                 new Item(2, "Zorro"),
                 new Item(3, "Anna")
         );
-        Collections.sort(items, new Item.ItemDescByName());
+        Collections.sort(items, new ItemDescByName());
         List<Item> expected = Arrays.asList(
                 new Item(2, "Zorro"),
                 new Item(1, "Serg"),

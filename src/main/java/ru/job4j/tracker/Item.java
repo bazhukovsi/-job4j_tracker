@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Item implements Comparable<Item> {
+public class Item  {
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
     private int id;
     private String name;
@@ -50,27 +50,6 @@ public class Item implements Comparable<Item> {
                 + ", name='" + name + '\''
                 + ", created=" + created.format(FORMATTER)
                 + '}';
-    }
-
-    @Override
-    public int compareTo(Item o) {
-        return Integer.compare(this.id, o.getId());
-    }
-
-    static class ItemAscByName  implements Comparator<Item> {
-
-        @Override
-        public int compare(Item o1, Item o2) {
-            return o1.getName().compareTo(o2.getName());
-        }
-    }
-
-    static class ItemDescByName implements Comparator<Item> {
-
-        @Override
-        public int compare(Item o1, Item o2) {
-            return o2.getName().compareTo(o1.getName());
-        }
     }
 
     @Override
