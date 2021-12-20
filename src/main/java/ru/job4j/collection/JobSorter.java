@@ -12,13 +12,13 @@ public class JobSorter {
                 new Job("Fix bug", 2),
                 new Job("X task", 0)
         );
-        Collections.sort(jobs, new Job.JobDescByName().thenComparing(new Job.JobDescByPriority()));
+        Collections.sort(jobs, new JobDescByName().thenComparing(new JobDescByPriority()));
         System.out.println(jobs);
-        Collections.sort(jobs, new Job.JobDescByPriority().thenComparing(new Job.JobDescByName()));
+        Collections.sort(jobs, new JobDescByPriority().thenComparing(new JobDescByName()));
         System.out.println(jobs);
-        Collections.sort(jobs, new Job.JobAscByName().thenComparing(new Job.JobAscByPriority()));
+        Collections.sort(jobs, new JobAscByName().thenComparing(new JobAscByPriority()));
         System.out.println(jobs);
-        Collections.sort(jobs, new Job.JobAscByPriority().thenComparing(new Job.JobAscByName()));
+        Collections.sort(jobs, new JobAscByPriority().thenComparing(new JobAscByName()));
         System.out.println(jobs);
     }
 }
