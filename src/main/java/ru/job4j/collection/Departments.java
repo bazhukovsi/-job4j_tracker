@@ -5,6 +5,7 @@ import java.util.*;
 public class Departments {
     public static List<String> fillGaps(List<String> deps) {
         Set<String> temp = new LinkedHashSet<>();
+        List<String> rsl = new ArrayList<>();
         for (String dep : deps) {
             StringBuilder result = new StringBuilder();
             for (String depTemp : dep.split("/")) {
@@ -25,16 +26,6 @@ public class Departments {
         List<String> desc = Departments.fillGaps(orgs);
         Collections.sort(desc, new DepDescComp());
         System.out.println(desc);
-    }
-
-    public static class DepDescComp implements Comparator<String> {
-        @Override
-        public int compare(String o1, String o2) {
-            String[] left = o1.split("/");
-            String[] right = o2.split("/");
-            int rsl = right[0].compareTo(left[0]);
-            return rsl == 0 ? o1.compareTo(o2) : rsl;
-        }
     }
 
     public static void main(String[] args) {
