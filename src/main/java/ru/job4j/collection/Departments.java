@@ -5,7 +5,6 @@ import java.util.*;
 public class Departments {
     public static List<String> fillGaps(List<String> deps) {
         Set<String> temp = new LinkedHashSet<>();
-        List<String> rsl = new ArrayList<>();
         for (String dep : deps) {
             StringBuilder result = new StringBuilder();
             for (String depTemp : dep.split("/")) {
