@@ -10,4 +10,5 @@ public class ListToMap {
                         s -> s,
                         (s1, s2) -> s1));
     }
+
 }
