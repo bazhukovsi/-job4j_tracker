@@ -27,16 +27,6 @@ public class Departments {
         System.out.println(desc);
     }
 
-    public static class DepDescComp implements Comparator<String> {
-        @Override
-        public int compare(String o1, String o2) {
-            String[] left = o1.split("/");
-            String[] right = o2.split("/");
-            int rsl = right[0].compareTo(left[0]);
-            return rsl == 0 ? o1.compareTo(o2) : rsl;
-        }
-    }
-
     public static void main(String[] args) {
         List<String> deps = Arrays.asList("K1/SK1", "K1/SK2", "K1/SK1/SSK1", "K1/SK1/SSK2", "K2", "K2/SK1/SSK1", "K2/SK1/SSK2");
         List<String> finalDeps = fillGaps(deps);
