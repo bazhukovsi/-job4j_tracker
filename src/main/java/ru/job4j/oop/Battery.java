@@ -19,7 +19,7 @@ public class Battery {
     public static void main(String[] args) {
         Battery batteryLow = new Battery(10);
         Battery batteryHigh = new Battery(40);
-        batteryHigh.exchange(batteryLow);
+        batteryLow.exchange(batteryHigh);
         System.out.println(batteryHigh.load);
         System.out.println(batteryLow.load);
     }
