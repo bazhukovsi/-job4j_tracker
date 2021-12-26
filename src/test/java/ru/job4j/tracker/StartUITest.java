@@ -12,7 +12,7 @@ public class StartUITest {
     public void whenExit() {
         Output output = new StubOutput();
         Input in = new StubInput(
-                new String[] {"0"}
+                new String[]{"0"}
         );
         Tracker tracker = new Tracker();
         UserAction[] actions = {
@@ -77,7 +77,7 @@ public class StartUITest {
     public void whenInvalidExit() {
         Output output = new StubOutput();
         Input in = new StubInput(
-                new String[] {"1", "0"}
+                new String[]{"1", "0"}
         );
         Tracker tracker = new Tracker();
         UserAction[] actions = new UserAction[]{
