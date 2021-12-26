@@ -19,7 +19,6 @@ public class PhoneDictionaryTest {
     @Test
     public void whenParametrSmallerZero() {
         PhoneDictionary phones = new PhoneDictionary();
-        //ArrayList<Person> persons = phones.find("Petr");
         var persons = phones.find("Petr");
         assertTrue(persons.isEmpty());
     }
