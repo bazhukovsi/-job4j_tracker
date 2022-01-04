@@ -33,7 +33,7 @@ public class ValidateInputTest {
     @Test
     public void whenThreeValidInput() {
         Output out = new StubOutput();
-        String[] str = new String[]{"1", "2", "3"};
+        String[] str = new String[]{"1", "3", "5"};
         Input in = new StubInput(str);
         ValidateInput input = new ValidateInput(out, in);
         int[] selected = new int[str.length];
