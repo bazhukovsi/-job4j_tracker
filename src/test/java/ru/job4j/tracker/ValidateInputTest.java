@@ -16,6 +16,7 @@ public class ValidateInputTest {
         ValidateInput input = new ValidateInput(out, in);
         int selected = input.askInt("Enter menu:");
         assertThat(selected, is(1));
+
     }
 
     @Test
@@ -32,18 +33,16 @@ public class ValidateInputTest {
     @Test
     public void whenThreeValidInput() {
         Output out = new StubOutput();
-        String[] str = new String[]{"1", "3", "5"};
+        String[] str = new String[]{"1", "2", "3"};
         Input in = new StubInput(str);
-        ValidateInput[] input = {
-                new ValidateInput(out, in)};
+        ValidateInput input = new ValidateInput(out, in);
         int[] selected = new int[str.length];
-        selected[0] = in.askInt("Enter menu:");
-        selected[1] = in.askInt("Enter menu:");
-        selected[2] = in.askInt("Enter menu:");
+        selected[0] = input.askInt("Enter menu:");
+        selected[1] = input.askInt("Enter menu:");
+        selected[2] = input.askInt("Enter menu:");
         assertThat(selected[0], is(Integer.parseInt(str[0])));
         assertThat(selected[1], is(Integer.parseInt(str[1])));
         assertThat(selected[2], is(Integer.parseInt(str[2])));
-
     }
 
     @Test
